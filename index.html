@@ -4,13 +4,20 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="estilo.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css1/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
 	<link rel="shortcut icon" href="img/logo.png" type="favicon" />
 	<a href="#" class="btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/loFtozxZG0s" ></a>
 	<link href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 	<title>PLAY CODE</title>
+
 	<nav class="navbar navbar-expand-lg navbar-light bg-#F9FBFB">
   <div class="container-fluid">
+
     <a class="navbar-brand" href="#"><img src="img/logo.png" width="110"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -18,13 +25,13 @@
     <div class="collapse navbar-collapse" id="navbarScroll">
       <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">VIDEOS</a>
+          
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">TUDO</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="Videos">
             Adicionar
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
@@ -46,57 +53,109 @@
   </div>
 </nav>
 </head>
+
 <body>
 	<div class="nome text">
 	<div class="container bg-texto">
 
-		<h1>Videos</h1>
+		<h1><a href="#" class="btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/loFtozxZG0s" >VIDEO</a></h1>
 	</div>
     <br><br>
 
-	<div class="container" class="efeito">
+	<div class="container" class="efeito" id=video>
       <div class="row">
-	    <div class="col-md-3 efeito">
-	   	<iframe width="230" height="185" src="https://www.youtube.com/embed/d7wG7vZhSng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	    <div class="col-md-3"> 
+      <button type="button" class="btn btn-light" data-toggle="modal" data-target="#videoModal" data-video="https://www.youtube.com/embed/watch?v=d7wG7vZhSng&list=RDd7wG7vZhSng&start_radio=1"><img src="img/vitorioso.jpg"width="230" height="185"></button>
 	   	<p> VITORIOSO ÉS </p>
 	   </div>
 
-	   <div class="col-md-3">
-       <iframe width="230" height="185" src="https://www.youtube.com/embed/32Xz3QUDLLg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	   <div class="col-md-3"> 
+      <button type="button" class="btn btn-light" data-toggle="modal" data-target="#videoModal" data-video="https://www.youtube.com/embed/watch?v=32Xz3QUDLLg&list=RD32Xz3QUDLLg&start_radio=1&rv=32Xz3QUDLLg&t=2"><img src="img/deserto.jpg"width="230" height="185"></button>
        <p> CAMINHO NO DESERTO </p>
       </div>
 
-      <div class="col-md-3">
-      <iframe width="230" height="185" src="https://www.youtube.com/embed/LHgpTnz_g9M" title="paulo de tarso" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p> O AMOR É O ÚNICO CAMINHO </p>
+      <div class="col-md-3"> 
+      <button type="button" class="btn btn-light" data-toggle="modal" data-target="#videoModal" data-video="https://www.youtube.com/embed/watch?v=-2Lxvg16oJg&list=RDCMUCLCN7U7VhortZ_2yO6Px4Rg&start_radio=1&rv=-2Lxvg16oJg&t=177"><img src="img/jesus.jpg"width="230" height="185"></button>
+      <p> NASCER DE NOVO </p>
       </div>
       
-      <div class="col-md-3">
-      <iframe width="230" height="185" src="https://www.youtube.com/embed/aMpM68cb5MY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="col-md-3"> 
+      <button type="button" class="btn btn-light" data-toggle="modal" data-target="#videoModal" data-video="https://www.youtube.com/embed/watch?v=d7wG7vZhSng&list=RDd7wG7vZhSng&start_radio=1"><img src="img/vitorioso.jpg"width="230" height="185"></button>
       <p> JESUS EM TUA PRESENÇA </p>
       </div>
 
-      <div class="col-md-3">
-      <span><iframe width="230" height="185" src="https://www.youtube.com/embed/-2Lxvg16oJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
-      <p> JESUS FALA SOBRE NASCER DE NOVO </p>
+      <div class="col-md-3"> 
+      <button type="button" class="btn btn-light" data-toggle="modal" data-target="#videoModal" data-video="https://www.youtube.com/embed/watch?v=PfpEefKiG2I&list=RDd7wG7vZhSng&index=6"><img src="img/oceans.jpg"width="230" height="185"></button>
+      <p> OCEANS </p>
       </div>
 
-      <div class="col-md-3">
-      <iframe width="230" height="185" src="https://www.youtube.com/embed/84vHChfC1Ik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p> COMO FAZER UM FOGUETE USANDO HTML? </p>
+      <div class="col-md-3"> 
+      <button type="button" class="btn btn-light" data-toggle="modal" data-target="#videoModal" data-video="https://www.youtube.com/embed/watch?v=If5sLl6Na0w&list=RDCMUCF1r_w8jqSdr7hcLmVO-42w&index=14"><img src="img/oportunidade.jpg"width="230" height="185"></button>
+      <p> CRIE A SUA OPORTUNIDADE </p>
       </div>
 
-      <div class="col-md-3">
-      <iframe width="230" height="185" src="https://www.youtube.com/embed/n6HL6XkvRSw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="col-md-3"> 
+      <button type="button" class="btn btn-light" data-toggle="modal" data-target="#videoModal" data-video="https://www.youtube.com/embed/watch?v=n6HL6XkvRSw&list=RDc1oosn83DPo&index=5"><img src="img/pode.jpg"width="230" height="185"></button>
       <p> PODE MORAR AQUI </p>
       </div>
 
-      <div class="col-md-3">
-      <iframe width="230" height="185" src="https://www.youtube.com/embed/P92VCmjzlRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p> MILAGRES </p>
-       </div>
-     </div>
-   </div>	
+      <div class="col-md-3"> 
+      <button type="button" class="btn btn-light" data-toggle="modal" data-target="#videoModal" data-video="https://www.youtube.com/embed/watch?v=d7wG7vZhSng&list=RDd7wG7vZhSng&start_radio=1"><img src="img/vitorioso.jpg"width="230" height="185"></button>
+      <p>VITORIOSO ÉS</p>
+      </div> 
+
+      <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-body">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <div>
+          <iframe width="100%" height="450" src=""></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark border-transparent">
+                <button type="button" class="close text-black" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body bg-dark p-0">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<script>
+$(document).ready(function() {
+    // Set iframe attributes when the show instance method is called
+    $("#videoModal").on("show.bs.modal", function(event) {
+        let button = $(event.relatedTarget); // Button that triggered the modal
+        let url = button.data("video");      // Extract url from data-video attribute
+        $(this).find("iframe").attr({
+            src : url,
+            allow : "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        });
+    });
+
+    // Remove iframe attributes when the modal has finished being hidden from the user
+    $("#videoModal").on("hidden.bs.modal", function() {
+        $("#videoModal iframe").removeAttr("src allow");
+    });
+});
+</script> 
+    
 		
 	
 
